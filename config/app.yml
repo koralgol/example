@@ -1,0 +1,11 @@
+prod:
+  frontend_base_url:  http://byexample.pl.localhost
+  backend_base_url:   http://admin.byexample.pl.localhost
+
+staging:
+  frontend_base_url:  http://byexample.pl.localhost
+  backend_base_url:   http://admin.byexample.pl.localhost
+
+dev:
+  frontend_base_url:  http://byexample.pl.localhost
+  backend_base_url:   http://admin.byexample.pl.localhost
