@@ -18,7 +18,7 @@
 
 			<div class="header_left">
 				<div id="site_title">
-					<a href="http://www.templatemo.com" target="_parent"> <img
+					<a href="<?php echo url_for('@homepage') ?>"> <img
 						src="my.jpg" alt="free css" /> <!-- <span>Free CSS Template</span> -->
 					</a>
 				</div>
@@ -42,9 +42,9 @@
 				<div id="templatemo_menu">
 
 					<ul>
-						<li><a href="#">EXAMPLES</a></li>
-						<li><a href="#" class="current">PROJECTS</a></li>
-						<li><a href="">HINTS</a></li>
+						<li><a href="<?php echo url_for('example/index') ?>">EXAMPLES</a></li>
+						<li><a href="<?php echo url_for('project/index') ?>" class="current">PROJECTS</a></li>
+						<li><a href="<?php echo url_for('hint/index') ?>">HINTS</a></li>
 						<li><a href="#">ABOUT</a></li>
 						<li><a href="#">LOGIN</a></li>
 					</ul>
