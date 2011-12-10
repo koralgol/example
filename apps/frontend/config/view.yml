@@ -6,13 +6,13 @@ default:
     content-type: text/html
 
   metas:
-    #title:        symfony project
+    title:        Symfony2 by examples
     #description:  symfony project
     #keywords:     symfony, project
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css]
+  stylesheets:    [templatemo_style.css]
 
   javascripts:    []
 

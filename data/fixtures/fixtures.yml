@@ -1,17 +1,38 @@
-# # Populate this file with data to be loaded by your ORM's *:data-load task.
-# # You can create multiple files in this directory (i.e. 010_users.yml,
-# # 020_articles.yml, etc) which will be loaded in alphabetical order.
-# # 
-# # See documentation for your ORM's *:data-load task for more information.
-# 
-# User:
-#   fabien:
-#     username: fabien
-#     password: changeme
-#     name:     Fabien Potencier
-#     email:    fabien.potencier@symfony-project.com
-#   kris:
-#     username: Kris.Wallsmith
-#     password: changeme
-#     name:     Kris Wallsmith
-#     email:    kris.wallsmith@symfony-project.com
+Example:
+  a1:
+    title: How the wild west was won
+    lead: |
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      Suspendisse nunc pede, aliquet at, tincidunt id, sodales in, nulla.
+      Pellentesque viverra ipsum ac quam. In hac habitasse platea dictumst.
+      In eget tellus.
+
+
+  a2:
+    title: Lorem
+    lead: |
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      Suspendisse nunc pede, aliquet at, tincidunt id, sodales in, nulla.
+      Pellentesque viverra ipsum ac quam. In hac habitasse platea dictumst.
+      In eget tellus.
+
+
+
+  a3:
+    title: Ipsum dolor
+    lead: |
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      Suspendisse nunc pede, aliquet at, tincidunt id, sodales in, nulla.
+      Pellentesque viverra ipsum ac quam. In hac habitasse platea dictumst.
+      In eget tellus.
+
+
+
+  a4:
+    title: Sit amet
+    lead: |
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      Suspendisse nunc pede, aliquet at, tincidunt id, sodales in, nulla.
+      Pellentesque viverra ipsum ac quam. In hac habitasse platea dictumst.
+      In eget tellus.
+
