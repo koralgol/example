@@ -81,3 +81,20 @@ Project:
       Suspendisse nunc pede, aliquet at, tincidunt id, sodales in, nulla.
       Pellentesque viverra ipsum ac quam. In hac habitasse platea dictumst.
       In eget tellus.
+
+Hint:
+
+<?php
+for ($i = 1; $i < 15; $i++) {
+echo "  h{$i}:
+    title: Lorem ipsum
+    number: {$i}
+    lead: |
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      Suspendisse nunc pede, aliquet at, tincidunt id, sodales in, nulla.
+      Pellentesque viverra ipsum ac quam. In hac habitasse platea dictumst.
+      In eget tellus.
+
+";
+}
+?>

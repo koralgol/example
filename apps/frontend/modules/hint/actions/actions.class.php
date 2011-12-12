@@ -12,9 +12,14 @@ class hintActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-    $this->hints = Doctrine_Core::getTable('Hint')
-      ->createQuery('a')
-      ->execute();
+//     $this->hints = Doctrine_Core::getTable('Hint')
+//       ->createQuery('a')
+//       ->execute();
+
+  	$this->pager = new sfDoctrinePager('Hint', sfConfig::get('app_pager_hint_max_na_stronie'));
+  	$this->pager->setQuery(Doctrine_Core::getTable('Hint')->createQuery('a'));
+  	$this->pager->setPage($request->getParameter('page', 1));
+  	$this->pager->init();
   }
 
   public function executeShow(sfWebRequest $request)

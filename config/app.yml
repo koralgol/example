@@ -13,3 +13,4 @@ dev:
 all:
   pager_example_max_na_stronie: 1
   pager_project_max_na_stronie: 1
+  pager_hint_max_na_stronie: 5

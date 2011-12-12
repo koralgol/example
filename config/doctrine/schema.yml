@@ -63,7 +63,8 @@ Project:
       
 Hint:
   options:
-    orderBy: title
+    #orderBy: title
+    orderBy: number DESC
     collate: utf8_polish_ci
     charset: utf8
     type: InnoDB
@@ -86,3 +87,5 @@ Hint:
       type: string(4096)
     contents:
       type: string(4096)
+    number:
+      type: integer

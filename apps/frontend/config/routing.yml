@@ -1,5 +1,8 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
+hint_pager:
+  url: /h/:page.html
+  param: { module: hint, action: index }
 
 project_pager:
   url: /pr/:page.html
