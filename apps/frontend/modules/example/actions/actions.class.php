@@ -24,7 +24,7 @@ class exampleActions extends sfActions
 
   public function executeShow(sfWebRequest $request)
   {
-    $this->example = Doctrine_Core::getTable('Example')->find(array($request->getParameter('id')));
+    $this->example = Doctrine_Core::getTable('Example')->findOneBySlug($request->getParameter('slug'));
     $this->forward404Unless($this->example);
   }
 
