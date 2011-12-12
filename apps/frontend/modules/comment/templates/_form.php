@@ -28,34 +28,6 @@
         </td>
       </tr>
       <tr>
-        <th><?php echo $form['created_by']->renderLabel() ?></th>
-        <td>
-          <?php echo $form['created_by']->renderError() ?>
-          <?php echo $form['created_by'] ?>
-        </td>
-      </tr>
-      <tr>
-        <th><?php echo $form['updated_by']->renderLabel() ?></th>
-        <td>
-          <?php echo $form['updated_by']->renderError() ?>
-          <?php echo $form['updated_by'] ?>
-        </td>
-      </tr>
-      <tr>
-        <th><?php echo $form['created_at']->renderLabel() ?></th>
-        <td>
-          <?php echo $form['created_at']->renderError() ?>
-          <?php echo $form['created_at'] ?>
-        </td>
-      </tr>
-      <tr>
-        <th><?php echo $form['updated_at']->renderLabel() ?></th>
-        <td>
-          <?php echo $form['updated_at']->renderError() ?>
-          <?php echo $form['updated_at'] ?>
-        </td>
-      </tr>
-      <tr>
         <th><?php echo $form['examples_list']->renderLabel() ?></th>
         <td>
           <?php echo $form['examples_list']->renderError() ?>
