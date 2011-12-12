@@ -9,15 +9,18 @@
  * @property string $title
  * @property string $lead
  * @property string $contents
+ * @property integer $number
  * 
  * @method integer getId()       Returns the current record's "id" value
  * @method string  getTitle()    Returns the current record's "title" value
  * @method string  getLead()     Returns the current record's "lead" value
  * @method string  getContents() Returns the current record's "contents" value
+ * @method integer getNumber()   Returns the current record's "number" value
  * @method Project setId()       Sets the current record's "id" value
  * @method Project setTitle()    Sets the current record's "title" value
  * @method Project setLead()     Sets the current record's "lead" value
  * @method Project setContents() Sets the current record's "contents" value
+ * @method Project setNumber()   Sets the current record's "number" value
  * 
  * @package    byexample
  * @subpackage model
@@ -46,8 +49,11 @@ abstract class BaseProject extends sfDoctrineRecord
              'type' => 'string',
              'length' => 4096,
              ));
+        $this->hasColumn('number', 'integer', null, array(
+             'type' => 'integer',
+             ));
 
-        $this->option('orderBy', 'title');
+        $this->option('orderBy', 'number DESC');
         $this->option('collate', 'utf8_polish_ci');
         $this->option('charset', 'utf8');
         $this->option('type', 'InnoDB');

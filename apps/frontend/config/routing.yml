@@ -1,6 +1,10 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+project_pager:
+  url: /pr/:page.html
+  param: { module: project, action: index }
+
 example_pager:
   url: /ex/:page.html
   param: { module: example, action: index }

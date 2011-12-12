@@ -1,6 +1,7 @@
 Example:
   a1:
     title: How the wild west was won
+    number: 1
     lead: |
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
       Suspendisse nunc pede, aliquet at, tincidunt id, sodales in, nulla.
@@ -10,6 +11,7 @@ Example:
 
   a2:
     title: Lorem
+    number: 2
     lead: |
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
       Suspendisse nunc pede, aliquet at, tincidunt id, sodales in, nulla.
@@ -20,6 +22,7 @@ Example:
 
   a3:
     title: Ipsum dolor
+    number: 3
     lead: |
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
       Suspendisse nunc pede, aliquet at, tincidunt id, sodales in, nulla.
@@ -30,9 +33,51 @@ Example:
 
   a4:
     title: Sit amet
+    number: 4
     lead: |
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
       Suspendisse nunc pede, aliquet at, tincidunt id, sodales in, nulla.
       Pellentesque viverra ipsum ac quam. In hac habitasse platea dictumst.
       In eget tellus.
 
+Project:
+  p1:
+    title: Project one
+    number: 1
+    lead: |
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      Suspendisse nunc pede, aliquet at, tincidunt id, sodales in, nulla.
+      Pellentesque viverra ipsum ac quam. In hac habitasse platea dictumst.
+      In eget tellus.
+
+
+  p2:
+    title: Project two
+    number: 2
+    lead: |
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      Suspendisse nunc pede, aliquet at, tincidunt id, sodales in, nulla.
+      Pellentesque viverra ipsum ac quam. In hac habitasse platea dictumst.
+      In eget tellus.
+
+
+
+  p3:
+    title: Project three
+    number: 3
+    lead: |
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      Suspendisse nunc pede, aliquet at, tincidunt id, sodales in, nulla.
+      Pellentesque viverra ipsum ac quam. In hac habitasse platea dictumst.
+      In eget tellus.
+
+
+
+  p4:
+    title: Project four
+    number: 4
+    lead: |
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      Suspendisse nunc pede, aliquet at, tincidunt id, sodales in, nulla.
+      Pellentesque viverra ipsum ac quam. In hac habitasse platea dictumst.
+      In eget tellus.

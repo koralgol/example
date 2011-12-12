@@ -12,9 +12,14 @@ class projectActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-    $this->projects = Doctrine_Core::getTable('Project')
-      ->createQuery('a')
-      ->execute();
+//     $this->projects = Doctrine_Core::getTable('Project')
+//       ->createQuery('a')
+//       ->execute();
+
+  	$this->pager = new sfDoctrinePager('Project', sfConfig::get('app_pager_project_max_na_stronie'));
+  	$this->pager->setQuery(Doctrine_Core::getTable('Project')->createQuery('a'));
+  	$this->pager->setPage($request->getParameter('page', 1));
+  	$this->pager->init();
   }
 
   public function executeShow(sfWebRequest $request)
