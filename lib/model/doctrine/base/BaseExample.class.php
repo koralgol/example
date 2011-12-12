@@ -10,17 +10,23 @@
  * @property string $lead
  * @property string $contents
  * @property integer $number
+ * @property Doctrine_Collection $Comments
+ * @property Doctrine_Collection $ExampleComment
  * 
- * @method integer getId()       Returns the current record's "id" value
- * @method string  getTitle()    Returns the current record's "title" value
- * @method string  getLead()     Returns the current record's "lead" value
- * @method string  getContents() Returns the current record's "contents" value
- * @method integer getNumber()   Returns the current record's "number" value
- * @method Example setId()       Sets the current record's "id" value
- * @method Example setTitle()    Sets the current record's "title" value
- * @method Example setLead()     Sets the current record's "lead" value
- * @method Example setContents() Sets the current record's "contents" value
- * @method Example setNumber()   Sets the current record's "number" value
+ * @method integer             getId()             Returns the current record's "id" value
+ * @method string              getTitle()          Returns the current record's "title" value
+ * @method string              getLead()           Returns the current record's "lead" value
+ * @method string              getContents()       Returns the current record's "contents" value
+ * @method integer             getNumber()         Returns the current record's "number" value
+ * @method Doctrine_Collection getComments()       Returns the current record's "Comments" collection
+ * @method Doctrine_Collection getExampleComment() Returns the current record's "ExampleComment" collection
+ * @method Example             setId()             Sets the current record's "id" value
+ * @method Example             setTitle()          Sets the current record's "title" value
+ * @method Example             setLead()           Sets the current record's "lead" value
+ * @method Example             setContents()       Sets the current record's "contents" value
+ * @method Example             setNumber()         Sets the current record's "number" value
+ * @method Example             setComments()       Sets the current record's "Comments" collection
+ * @method Example             setExampleComment() Sets the current record's "ExampleComment" collection
  * 
  * @package    byexample
  * @subpackage model
@@ -62,6 +68,15 @@ abstract class BaseExample extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
+        $this->hasMany('Comment as Comments', array(
+             'refClass' => 'ExampleComment',
+             'local' => 'example_id',
+             'foreign' => 'comment_id'));
+
+        $this->hasMany('ExampleComment', array(
+             'local' => 'id',
+             'foreign' => 'example_id'));
+
         $signable0 = new Doctrine_Template_Signable();
         $sluggable0 = new Doctrine_Template_Sluggable(array(
              'unique' => true,

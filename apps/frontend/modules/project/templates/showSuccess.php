@@ -6,6 +6,6 @@
 			<p><?php echo $project->getLead()?></p>
 		</header>
 		<?php echo $project->getContents() ?>
-		<footer><?php echo $project->getUpdateAt()?></footer>
+		<footer><?php echo $project->getUpdatedAt()?></footer>
 	</article>
 </section>

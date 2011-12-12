@@ -26,6 +26,7 @@ class exampleActions extends sfActions
   {
     $this->example = Doctrine_Core::getTable('Example')->findOneBySlug($request->getParameter('slug'));
     $this->forward404Unless($this->example);
+    $this->form = new CommentForm();
   }
 
   public function executeNew(sfWebRequest $request)

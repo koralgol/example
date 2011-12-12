@@ -6,6 +6,6 @@
 			<p><?php echo $hint->getLead()?></p>
 		</header>
 		<?php echo $hint->getContents() ?>
-		<footer><?php echo $hint->getUpdateAt()?></footer>
+		<footer><?php echo $hint->getUpdatedAt()?></footer>
 	</article>
 </section>

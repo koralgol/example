@@ -16,6 +16,12 @@
 	<div id="templatemo_header_wrapper">
 		<div id="templatemo_header">
 
+		<?php if($sf_user->isAuthenticated()):?>
+		<div id="zalogowany">
+			Zalogowany: <?php echo $sf_user->getUsername()?>
+		</div>
+		<?php endif;?>
+		
 			<div class="header_left">
 				<div id="site_title">
 					<a href="<?php echo url_for('@homepage') ?>"> <img
@@ -46,7 +52,11 @@
 						<li><a href="<?php echo url_for('project/index') ?>" class="current">PROJECTS</a></li>
 						<li><a href="<?php echo url_for('hint/index') ?>">HINTS</a></li>
 						<li><a href="#">ABOUT</a></li>
-						<li><a href="#">LOGIN</a></li>
+						<?php if ($sf_user->isAuthenticated()):?>
+							<li><a href="<?php echo url_for('sfGuardAuth/signout')?>">LOGOUT</a></li>
+						<?php else:?>
+							<li><a href="<?php echo url_for('sfGuardAuth/signin')?>">LOGIN</a></li>
+						<?php endif;?>
 					</ul>
 
 				</div>

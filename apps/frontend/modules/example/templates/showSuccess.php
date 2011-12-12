@@ -7,7 +7,8 @@
 		</header>
 		<?php echo $example->getContents() ?>
 		<footer>
-			<?php echo $example->getUpdatedAt()?>
+			<?php include_partial('global/comments', array('comments' => $example->getComments()))?>
 		</footer>
 	</article>
 </selection>
+<?php include_partial('comment/form', array('form' => $form))?>

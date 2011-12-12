@@ -31,6 +31,13 @@ Example:
       type: string(4096)
     number:
       type: integer
+  relations:
+    Comments:
+      class: Comment
+      refClass: ExampleComment
+#        type: many
+#        local: exmaple_id
+#        foreign: comment_id
       
 Project:
   options:
@@ -89,3 +96,63 @@ Hint:
       type: string(4096)
     number:
       type: integer
+      
+Comment:
+  options:
+    orderBy: created_at DESC
+    collate: utf8_polish_ci
+    charset: utf8
+    type: InnoDB
+  actAs:
+    Signable:
+#      Sluggable:
+#        unique: true
+#        fields: [title]
+#        canUpdate: false
+    Timestampable:
+  columns:
+    id:
+      type: integer
+      primary: true
+      notnull: true
+      autoincrement: true
+    contents:
+      type: string(4096)
+  relations:
+    Examples:
+      class: Example
+      refClass: ExampleComment
+#        type: many
+#        local: example_id
+#        foreign: comment_id
+
+ExampleComment:
+  options:
+    symfony:
+      form: false
+      filter: false
+  tableName: example_has_comment
+  columns:
+    example_id:
+      type: integer
+      primary: true
+      notnull: true
+    comment_id:
+      type: integer
+      primary: true
+      notnull: true
+  relations:
+    Example:
+      class: Example
+      local: example_id
+      foreign: id
+#        foreignType: many
+#        type: one
+      onDelete: CASCADE
+    Comment:
+      class: Comment
+      local: comment_id
+      foreign: id
+#        foreignType: many
+#        type: one
+      onDelete: CASCADE
