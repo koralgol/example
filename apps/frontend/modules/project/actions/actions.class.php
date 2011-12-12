@@ -24,7 +24,7 @@ class projectActions extends sfActions
 
   public function executeShow(sfWebRequest $request)
   {
-    $this->project = Doctrine_Core::getTable('Project')->find(array($request->getParameter('id')));
+    $this->project = Doctrine_Core::getTable('Project')->findOneBySlug($request->getParameter('slug'));
     $this->forward404Unless($this->project);
   }
 

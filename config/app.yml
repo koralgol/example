@@ -11,6 +11,6 @@ dev:
   backend_base_url:   http://admin.byexample.pl.localhost
 
 all:
-  pager_example_max_na_stronie: 1
-  pager_project_max_na_stronie: 1
+  pager_example_max_na_stronie: 2
+  pager_project_max_na_stronie: 3
   pager_hint_max_na_stronie: 5

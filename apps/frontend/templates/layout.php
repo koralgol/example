@@ -74,7 +74,7 @@
 					Pellentesque dolor nulla, congue vitae, fringilla in, varius a,
 					orci. Mauris convallis.</p>
 				<div class="button_02">
-					<a href="#">Read more</a>
+					<a href="<?php echo url_for('example/index')?>">Read more</a>
 				</div>
 
 				<div class="cleaner"></div>
@@ -86,7 +86,7 @@
 					necessitatibus saepe eveniet ut et voluptates fringilla in, varius
 					a, orci. Mauris convallis.</p>
 				<div class="button_02">
-					<a href="#">Read more</a>
+					<a href="<?php echo url_for('project/index')?>">Read more</a>
 				</div>
 
 				<div class="cleaner"></div>
@@ -98,7 +98,7 @@
 					Cras porttitor nisi ut turpis condimentum tincidunt. Pellentesque
 					sit amet magna vel lectus.</p>
 				<div class="button_02">
-					<a href="#">Read more</a>
+					<a href="<?php echo url_for('hint/index')?>">Read more</a>
 				</div>
 
 				<div class="cleaner"></div>

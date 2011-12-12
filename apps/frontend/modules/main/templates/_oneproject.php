@@ -11,6 +11,6 @@
 		<?php echo $project->getLead()?>
 	</p>
 	<div class="button_02">
-		<a href="#">Read more</a>
+		<a href="<?php echo url_for('hint/show?slug=' . $project->getSlug())?>">Read more</a>
 	</div>
 </div>

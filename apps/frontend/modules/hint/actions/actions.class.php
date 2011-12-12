@@ -24,7 +24,7 @@ class hintActions extends sfActions
 
   public function executeShow(sfWebRequest $request)
   {
-    $this->hint = Doctrine_Core::getTable('Hint')->find(array($request->getParameter('id')));
+    $this->hint = Doctrine_Core::getTable('Hint')->findOneBySlug($request->getParameter('slug'));
     $this->forward404Unless($this->hint);
   }
 
