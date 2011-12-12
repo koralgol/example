@@ -1,4 +1,4 @@
-<selection class="pojemnik">
+<div class="pojemnik">
 	<article>
 		<header>
 			<h1>Example: <?php echo $example->getNumber()?></h1>
@@ -10,5 +10,7 @@
 			<?php include_partial('global/comments', array('comments' => $example->getComments()))?>
 		</footer>
 	</article>
-</selection>
-<?php include_partial('comment/form', array('form' => $form))?>
+</div>
+<?php if ($sf_user->isAuthenticated()):?>
+	<?php include_partial('comment/form', array('form' => $form))?>
+<?php endif;?>
